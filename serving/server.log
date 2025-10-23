@@ -1,0 +1,25 @@
+2025-10-22 16:39:40.583279: I external/org_tensorflow/tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-22 16:39:40.657393: I tensorflow_serving/model_servers/server.cc:78] Building single TensorFlow model file config:  model_name: fakenews_model model_base_path: /mnt/c/Users/onatz/Downloads/fake_news_project/serving
+2025-10-22 16:39:40.660172: I tensorflow_serving/model_servers/server_core.cc:481] Adding/updating models.
+2025-10-22 16:39:40.660448: I tensorflow_serving/model_servers/server_core.cc:610]  (Re-)adding model: fakenews_model
+2025-10-22 16:39:40.939836: I tensorflow_serving/core/basic_manager.cc:771] Successfully reserved resources to load servable {name: fakenews_model version: 1}
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1761140380.942169    2835 loader_harness.cc:71] Approving load for servable version {name: fakenews_model version: 1}
+I0000 00:00:1761140380.942900    2835 loader_harness.cc:79] Loading servable version {name: fakenews_model version: 1}
+2025-10-22 16:39:40.954221: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: /mnt/c/Users/onatz/Downloads/fake_news_project/serving/1
+2025-10-22 16:39:41.009146: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:52] Reading meta graph with tags { serve }
+2025-10-22 16:39:41.009597: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:147] Reading SavedModel debug info (if present) from: /mnt/c/Users/onatz/Downloads/fake_news_project/serving/1
+2025-10-22 16:39:41.012595: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+I0000 00:00:1761140381.162661    2835 mlir_graph_optimization_pass.cc:425] MLIR V1 optimization pass is not enabled
+2025-10-22 16:39:41.175157: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:236] Restoring SavedModel bundle.
+2025-10-22 16:39:42.660668: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:220] Running initialization op on SavedModel bundle at path: /mnt/c/Users/onatz/Downloads/fake_news_project/serving/1
+2025-10-22 16:39:42.754796: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 1801169 microseconds.
+2025-10-22 16:39:42.763744: I tensorflow_serving/servables/tensorflow/saved_model_warmup_util.cc:82] No warmup data file found at /mnt/c/Users/onatz/Downloads/fake_news_project/serving/1/assets.extra/tf_serving_warmup_requests
+I0000 00:00:1761140382.934564    2835 loader_harness.cc:105] Successfully loaded servable version {name: fakenews_model version: 1}
+2025-10-22 16:39:42.938663: I tensorflow_serving/model_servers/server_core.cc:502] Finished adding/updating models
+2025-10-22 16:39:42.939569: I tensorflow_serving/model_servers/server.cc:122] Using InsecureServerCredentials
+2025-10-22 16:39:42.940289: I tensorflow_serving/model_servers/server.cc:393] Profiler service is enabled
+2025-10-22 16:39:42.944527: I tensorflow_serving/model_servers/server.cc:428] Running gRPC ModelServer at 0.0.0.0:8500 ...
+2025-10-22 16:39:42.950519: I tensorflow_serving/model_servers/server.cc:449] Exporting HTTP/REST API at:localhost:8501 ...
+[evhttp_server.cc : 261] NET_LOG: Entering the event loop ...
