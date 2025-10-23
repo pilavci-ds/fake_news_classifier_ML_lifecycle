@@ -8,7 +8,7 @@ A machine learning project demonstrating the complete **ML Lifecycle** from scop
 
 - **`fake_news_model.ipynb`** - Complete implementation covering all ML lifecycle phases: scoping, data, modeling, and deployment
 - **`tokenizer_server.py`** - Flask wrapper that handles DistilBERT tokenization and forwards requests to TensorFlow Serving
-- - **`requirements.txt`** - Required libraries
+- **`requirements.txt`** - Required libraries
 
 ---
 
